@@ -2,9 +2,9 @@ class Product:
     def __init__(self, product_id: str, name: str, price: float, stock: int):
         self.product_id = product_id
         self.name = name
-        self.__price = price  # Hidden variable (Encapsulation)
+        self.__price = price  # Private variable
         self.stock = stock
-
+        
     # Getter for price to protect it from direct outside modification
     @property
     def price(self) -> float:
