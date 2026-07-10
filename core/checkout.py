@@ -39,7 +39,7 @@ class Order:
             self.is_paid = True
             # Log it to customer profile
             self.customer.purchase_history.append(self)
-            print(f"🎉 Order #{self.order_id} successfully finalized!")
+            print(f"Order #{self.order_id} successfully finalized!")
             return True
         else:
             print("[CHECKOUT FAILED] Payment transaction was rejected.")
